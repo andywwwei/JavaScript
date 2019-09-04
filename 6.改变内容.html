@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>学习</title>
+</head>    
+<body>
+    <h1>我的第一个段JavaScript</h1>
+    <p id="demo">
+        javascript 能够改变HTML元素内容。
+    </p>
+<script>
+    function myFunction()
+    {
+        x=document.getElementById("demo");//查找元素
+        x.innerHTML="hello world!";//赋值元素
+    }    
+</script>
+<!-- 注意这个function函数后面必须加括号 -->
+<button type="button" onclick="myFunction()">点击</button>
+</body>
+</html>

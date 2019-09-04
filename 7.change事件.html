@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>学习</title>
+    </head>
+    <body>
+        <script>
+            // element.src.match 方法是检索img标签里面有没有包涵off的字符串，如果有为true，没有false
+            // function changeImage()
+            // {
+            //     element=document.getElementById('myImage');
+            //     if (element.src.match("off")) {
+            //         element.src="./static/on.jpg";
+            //         alert(element.src.match("off"));
+            //     } else {
+            //         element.src="./static/off.jpg";
+            //         alert(element.src.match("off"));
+            //     }
+            // }
+
+
+            // 三目运算符，实现同样的功能，代码简单了很多
+            // function changeImage(){
+            //     var s = document.getElementById("myImage");
+            //     s.src=s.src.match("off")?"./static/on.jpg":"./static/off.jpg";
+            // }
+
+            // 超级简洁 函数上多加了一个this
+                function changeImage(s){
+                    s.src=s.src.match("off")?"./static/on.jpg":"./static/off.jpg";
+                }
+
+        </script>
+        <img id="myImage" onclick="changeImage(this)" src="./static/off.jpg" width="100" height="180">
+        <p>点击灯泡就可以打开或关闭这盏灯</p>
+    </body>
+</html>
