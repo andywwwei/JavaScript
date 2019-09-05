@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utr-8">
+        <title>studying</title>
+    </head>
+<body>
+    <p>点击这个按钮，调用传参</p>
+    <button type="button" onclick="myFunction('hello','pater')">点击</button>
+    <p id="demo"></p>
+<script>
+    function myFunction(var1,var2){
+        alert(var1+var2);
+    }
+    var var3 = myoneFunction();
+    function myoneFunction(){
+        return 1;
+    }
+    document.getElementById("demo").innerHTML =var3;
+
+</script>
+</body>
+</html>
